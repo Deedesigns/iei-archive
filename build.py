@@ -10,7 +10,9 @@ published: 2026-10-13
 updated: 2026-10-13        (optional)
 summary: one sentence
 ---
-Body uses a tiny Markdown subset: ## headings, paragraphs, - lists, **bold**, *italic*.
+Body uses a tiny Markdown subset: ## headings, paragraphs, - lists, **bold**, *italic*, [links](https://...),
+and images on their own line: ![alt](file.jpg "caption") or ![alt](file.jpg) followed by an *italic caption line*.
+Image files live in static/images/ and are copied to public/static/images/.
 """
 import html, re, shutil, pathlib, datetime
 ROOT = pathlib.Path(__file__).parent
@@ -23,6 +25,7 @@ CATS = {
  "UAP & Encounters": ("uap-encounters", "UA", "UFO/UAP cases, military reports and government disclosures."),
  "Claims & Verdicts": ("claims-verdicts", "CV", "Specific claims, investigated against the evidence."),
 }
+IMG = re.compile(r'^!\[([^\]]*)\]\(\s*(\S+?)(?:\s+"([^"]*)")?\s*\)$')
 VERDICTS = {"confirmed","unexplained","explained","disputed"}
 def badge(a):
     v = a.get("verdict","")
@@ -43,9 +46,19 @@ def md(body):
         if lst:
             tag = "ol class=\"notes\"" if src[0] else "ul"
             out.append(f"<{tag}>" + "".join(f"<li>{inline(x)}</li>" for x in lst) + f"</{tag.split()[0]}>"); lst.clear()
-    for line in body.splitlines():
+    lines = body.splitlines(); skip = set()
+    for n, line in enumerate(lines):
         s = line.strip()
-        if not s: flush()
+        if n in skip: continue
+        m = IMG.match(s)
+        if m:
+            flush(); alt, path, cap = m.group(1), m.group(2), m.group(3) or ""
+            nxt = lines[n+1].strip() if n + 1 < len(lines) else ""
+            if not cap and re.fullmatch(r"\*[^*].*\*", nxt): cap = nxt[1:-1]; skip.add(n+1)
+            src_ = path if re.match(r"https?://", path) else "../static/images/" + path.removeprefix("images/").removeprefix("static/images/")
+            fc = f"<figcaption>{inline(cap)}</figcaption>" if cap else ""
+            out.append(f'<figure class="fig"><img src="{html.escape(src_)}" alt="{html.escape(alt)}" loading="lazy">{fc}</figure>')
+        elif not s: flush()
         elif s.startswith("## "):
             flush(); src[0] = s[3:].strip().lower() in ("sources","references","notes")
             out.append('<hr class="thin">' + (f'<h2 class="srch">Notes and Sources</h2>' if src[0] else f"<h2>{inline(s[3:])}</h2>"))

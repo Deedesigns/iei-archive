@@ -8,6 +8,9 @@ summary: In 2025 a Cambridge-led team reported 3-sigma evidence for possible bio
 ---
 ## The planet
 
+![Illustration of a blue sub-Neptune planet beside its red dwarf star](k2-18b-illustration.jpg)
+*Artist's illustration of K2-18b, based on its measured size and orbit; no image of the planet's surface exists. Credit: NASA, ESA, CSA, Joseph Olmsted (STScI); science: Nikku Madhusudhan (IoA), via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Exoplanet_K2-18_b_%28Illustration%29.jpg), public domain.*
+
 K2-18b is a *sub-Neptune*: about 2.6 times Earth's radius and about 8.6 times its mass. It orbits a small red dwarf star (spectral type M2.5V) inside that star's habitable zone. Its bulk properties fit several very different interiors. One is a **"hycean" world**, a proposed planet type with a global water ocean under a hydrogen-rich atmosphere. Others are a gas-rich mini-Neptune or a rocky "gas dwarf" with a thick hydrogen envelope.
 
 ## The claim

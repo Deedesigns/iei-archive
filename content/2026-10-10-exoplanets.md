@@ -11,9 +11,15 @@ The first planets confirmed outside our solar system were found in 1992 orbiting
 
 ## How they are found
 
+![Stacked bar chart of confirmed exoplanets per discovery year, coloured by method; transits dominate after 2014](exoplanets-by-year.png)
+*Confirmed exoplanets by discovery year and method (6,445 planets; 2026 is a partial year). Chart: IEI. Data: [NASA Exoplanet Archive](https://exoplanetarchive.ipac.caltech.edu/), Planetary Systems table, queried October 13, 2026.*
+
 Most known exoplanets were found by the **transit method**, which watches for a star dimming slightly as a planet passes in front of it. NASA's Kepler mission used this method to discover about 2,800 planets. The **radial velocity** method, which detects a star wobbling as a planet tugs on it, accounts for most of the rest.
 
 ## The habitable zone
+
+![Artist's comparison of the seven TRAPPIST-1 planets with Mercury, Venus, Earth and Mars](trappist-1.jpg)
+*Artist's concept comparing the seven TRAPPIST-1 planets with the rocky planets of our solar system; sizes are based on measurements, surfaces are imagined. Credit: NASA/JPL-Caltech/R. Hurt, T. Pyle, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Comparing_the_TRAPPIST-1_planets_%28eso1706o%29.tiff), CC BY 4.0.*
 
 Astronomers look for planets in a star's *habitable zone*, the range of distances where liquid water could exist on a rocky surface. Being in that zone does not mean a planet is habitable; it is only a starting filter. Famous examples include the seven Earth-sized planets of TRAPPIST-1, several of which orbit in or near that zone.
 

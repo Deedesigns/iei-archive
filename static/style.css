@@ -40,3 +40,7 @@ ol.notes{font-size:14px;padding-left:24px}
 .ret{font-family:Verdana,sans-serif;font-size:12px}
 .lu{font-family:Verdana,sans-serif;font-size:11px;color:#555;font-style:italic;margin-top:20px}
 .foot{text-align:center;font-family:Verdana,Arial,sans-serif;font-size:11px;color:#333;padding:0 10px 12px;line-height:1.7}
+
+.fig{margin:16px auto;padding:6px;border:1px solid #777;background:#fff;max-width:640px;text-align:center;box-shadow:2px 2px 0 #c9c2a8}
+.fig img{max-width:100%;height:auto;display:block;margin:0 auto;border:1px solid #bbb}
+.fig figcaption{font-family:Verdana,Arial,sans-serif;font-size:11px;color:#333;text-align:left;padding:6px 2px 2px;line-height:1.45;border-top:1px dotted #999;margin-top:6px}
