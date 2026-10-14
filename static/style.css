@@ -1,0 +1,42 @@
+body{margin:0;padding:14px 0;background:#c8c8c0;font-family:"Times New Roman",Times,serif;font-size:17px;color:#111;line-height:1.4}
+a{color:#0000cc}a:visited{color:#551a8b}a:hover{color:#990000}
+.frame{width:980px;background:#fbfaf5;border:1px solid #888;border-collapse:collapse}
+.hdr{padding:10px 14px;background:#fbfaf5;border-bottom:3px double #1f2f5c}
+.org{font-family:Arial,Helvetica,sans-serif;font-size:27px;font-weight:bold;color:#1f2f5c;letter-spacing:.5px}
+.tagline{font-family:Verdana,Arial,sans-serif;font-size:12px;color:#444;margin-top:3px}
+.hdrr small{font-family:Verdana,sans-serif;font-size:11px;color:#7a1f1f}
+.topbar{background:#1f2f5c;color:#fff;font-family:Verdana,Arial,sans-serif;font-size:12px;padding:4px 12px}
+.topbar a,.topbar a:visited{color:#fff}
+.side{width:190px;background:#e6e4dc;border-right:1px solid #999;padding:10px;font-family:Verdana,Arial,sans-serif;font-size:12px}
+.navh{margin:12px 0 4px;font-weight:bold;color:#fff;background:#7a1f1f;padding:2px 5px;font-size:11px;text-transform:uppercase}
+.nav{margin:0;padding-left:16px}.nav li{margin:3px 0}
+.key{margin:2px 0}.key td{padding:2px 0}
+.sidenote{font-size:11px;color:#444;border-top:1px solid #aaa;padding-top:6px;margin-top:14px}
+.btn,input[type=submit]{font-family:Arial,sans-serif;font-size:11px;background:#d4d0c8;border:2px outset #eee;padding:1px 6px}
+input[type=text]{font-size:11px;width:110px;border:2px inset #ddd}
+.main{padding:14px 26px 10px}
+h1,h2,h3{font-family:Arial,Helvetica,sans-serif;color:#1f2f5c}
+h1{font-size:25px;margin:6px 0 10px;border-bottom:1px solid #1f2f5c;padding-bottom:4px}
+h2{font-size:18px;margin:20px 0 6px;color:#7a1f1f}
+hr.thin{border:0;border-top:1px solid #999;margin:14px 0}
+.crumb{font-family:Verdana,sans-serif;font-size:11px;color:#555;margin:0 0 4px}
+.idx,.docinfo{border-collapse:collapse;border:1px solid #777;font-size:15px}
+.idx th,.docinfo th{background:#d4d0c8;font-family:Verdana,Arial,sans-serif;font-size:11px;text-align:left;padding:4px 6px;border:1px solid #888}
+.idx td,.docinfo td{padding:5px 6px;border:1px solid #bbb;vertical-align:top}
+.idx tr:nth-child(odd) td{background:#f1efe6}
+.idx small{color:#333}
+td.d{font-family:"Courier New",monospace;font-size:13px;white-space:nowrap}
+.docinfo{margin-bottom:10px}.docinfo td{min-width:150px}
+.verdict{font-family:Verdana,Arial,sans-serif;font-size:10px;font-weight:bold;padding:1px 5px;border:1px solid;letter-spacing:.5px;white-space:nowrap}
+.v-confirmed{color:#145214;border-color:#145214;background:#e3efe0}
+.v-explained{color:#1f2f5c;border-color:#1f2f5c;background:#e2e6f0}
+.v-disputed{color:#7a4a00;border-color:#7a4a00;background:#f5ecd6}
+.v-unexplained{color:#7a1f1f;border-color:#7a1f1f;background:#f3e0e0}
+.notice{border:1px solid #7a1f1f;background:#f6f1e1;margin:12px 0}.notice td{padding:8px 10px;font-size:15px}
+.news{padding-left:20px}.news li{margin:4px 0}
+.abstract{background:#f1efe6;border-left:3px solid #1f2f5c;padding:8px 12px;font-size:16px}
+.prose p{margin:8px 0}.prose h2{margin-top:6px}
+ol.notes{font-size:14px;padding-left:24px}
+.ret{font-family:Verdana,sans-serif;font-size:12px}
+.lu{font-family:Verdana,sans-serif;font-size:11px;color:#555;font-style:italic;margin-top:20px}
+.foot{text-align:center;font-family:Verdana,Arial,sans-serif;font-size:11px;color:#333;padding:0 10px 12px;line-height:1.7}
