@@ -44,3 +44,31 @@ ol.notes{font-size:14px;padding-left:24px}
 .fig{margin:16px auto;padding:6px;border:1px solid #777;background:#fff;max-width:640px;text-align:center;box-shadow:2px 2px 0 #c9c2a8}
 .fig img{max-width:100%;height:auto;display:block;margin:0 auto;border:1px solid #bbb}
 .fig figcaption{font-family:Verdana,Arial,sans-serif;font-size:11px;color:#333;text-align:left;padding:6px 2px 2px;line-height:1.45;border-top:1px dotted #999;margin-top:6px}
+
+/* ---- Mobile layout: stack the table frame, keep the 90s look ---- */
+img,svg{max-width:100%}
+.main{overflow-wrap:break-word}
+@media(max-width:768px){
+body{padding:0;font-size:17px}
+.frame{width:100%;border-left:0;border-right:0}
+.frame,.frame td,.frame table{box-sizing:border-box}
+.frame,.frame>tbody,.frame>tbody>tr,.frame>tbody>tr>td,
+.hdr>table,.hdr>table>tbody,.hdr>table>tbody>tr{display:block;width:100%!important}
+.hdr>table>tbody>tr{display:flex;align-items:center;gap:10px}
+.hdr>table>tbody>tr>td:first-child{width:64px!important;flex:0 0 64px}
+.hdr>table>tbody>tr>td:first-child svg,.hdr>table>tbody>tr>td:first-child img{width:64px;height:64px}
+.hdrr{display:none}
+.org{font-size:21px;line-height:1.15}
+.tagline{font-size:11px}
+.topbar{font-size:13px;line-height:2;padding:4px 10px}
+.frame>tbody>tr>td.main{order:1;padding:12px 14px}
+.frame>tbody>tr:has(>td.side){display:flex;flex-direction:column}
+.side{width:auto!important;border-right:0;border-top:3px double #1f2f5c;order:2;font-size:13px;padding:10px 14px}
+.nav li{margin:6px 0}
+h1{font-size:22px}
+.idx,.docinfo{display:block;overflow-x:auto;max-width:100%;-webkit-overflow-scrolling:touch}
+.docinfo td{min-width:0}
+.idx td.d{white-space:normal}
+.fig{max-width:100%}
+.foot{padding:0 10px 12px}
+}
